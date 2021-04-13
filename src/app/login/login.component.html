@@ -1,0 +1,31 @@
+
+<div class="row">
+  <div class="col-xs-12 col-sm-10  col-md-8 col-sm-offset-1 col-md-offset-2">
+    <form >
+    <div class="radio-inline">
+      <div class="custom-control custom-radio">
+        <input id="admin" type="radio" class="custom-control-input" value="admin" name="admin" ngModel>
+        <label class="custom-control-label" for="admin">الادمن</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input id="company" type="radio" class="custom-control-input" value="company" name="company" ngModel>
+        <label class="custom-control-label" for="company">شركة </label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input id="moderator" type="radio" class="custom-control-input" value="moderator" name="moderator" ngModel>
+        <label class="custom-control-label" for="moderator">مساعد </label>
+      </div>
+    </div>
+      <!--(ngSubmit)="onSignIn(f)" #f="ngForm"-->
+      <div class="form-group">
+        <label for="email">البريد الالكتروني</label>
+        <input type="email" id="email" name="email" ngModel class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="password">كلمة السر </label>
+        <input type="password" id="password" name="password" ngModel class="form-control">
+      </div>
+      <button class="btn btn-primary" type="submit">تسجيل </button>
+    </form>
+  </div>
+</div>
