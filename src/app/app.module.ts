@@ -17,10 +17,13 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 import {RecipeService} from './recipes/recipe.service';
 import {HttpClientModule} from '@angular/common/http';
 import {DataStoragreService} from './shared/data-storagre.service';
-import { SignupComponent } from './auth/signup/signup.component';
-import { SigninComponent } from './auth/signin/signin.component';
 import { FilterComponent } from './filter/filter.component';
 import { SearchComponent } from './search/search.component';
+import { CompanyComponent } from './company/company.component';
+import { AdminComponent } from './admin/admin.component';
+import { ModeratorComponent } from './moderator/moderator.component';
+import { LoginComponent } from './login/login.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -35,10 +38,13 @@ import { SearchComponent } from './search/search.component';
     DropdownDirective,
     RecipeStartComponent,
     RecipeEditComponent,
-    SignupComponent,
-    SigninComponent,
     FilterComponent,
-    SearchComponent
+    SearchComponent,
+    CompanyComponent,
+    AdminComponent,
+    ModeratorComponent,
+    LoginComponent,
+    AboutComponent
   ],
     imports: [
         BrowserModule,

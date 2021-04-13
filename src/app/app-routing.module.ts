@@ -5,7 +5,11 @@ import {ShoppingListComponent} from './shopping-list/shopping-list.component';
 import {RecipeStartComponent} from './recipes/recipe-start/recipe-start.component';
 import {RecipeDetailComponent} from './recipes/recipe-detail/recipe-detail.component';
 import {RecipeEditComponent} from './recipes/recipe-edit/recipe-edit.component';
-import {SignupComponent} from './auth/signup/signup.component';
+import {CompanyComponent} from './company/company.component';
+import {AdminComponent} from './admin/admin.component';
+import {ModeratorComponent} from './moderator/moderator.component';
+import {LoginComponent} from './login/login.component';
+import {AboutComponent} from './about/about.component';
 const appRoutes: Routes = [
   {path: '' , redirectTo: '/recipes' , pathMatch: 'full' },
   {path: 'recipes' , component: RecipesComponent , children: [
@@ -15,8 +19,11 @@ const appRoutes: Routes = [
       {path: ':id/edit', component: RecipeEditComponent}
     ]},
   {path: 'shopping-list' , component: ShoppingListComponent},
-  {path: 'signUp' , component: SignupComponent}
-
+  {path: 'company' , component: CompanyComponent},
+  {path: 'admin' , component: AdminComponent},
+  {path: 'moderator' , component: ModeratorComponent},
+  {path: 'login' , component: LoginComponent},
+  {path: 'about' , component: AboutComponent}
 
 ];
 @NgModule({
